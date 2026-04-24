@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { validateForm } from './form'
+import { validateForm } from './Form'
 
 describe('Form Testing', () => {
   it('valid input', () => {
