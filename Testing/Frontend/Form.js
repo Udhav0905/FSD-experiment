@@ -1,6 +1,3 @@
-export function validateForm(data) {
-  if (!data.name || !data.email) {
-    return false;
-  }
-  return true;
+export function validateForm(name) {
+  return name.length > 0;
 }

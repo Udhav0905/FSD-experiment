@@ -1,12 +1,12 @@
 import { describe, it, expect } from 'vitest'
 import { validateForm } from './form'
 
-describe('Form Test', () => {
-  it('should validate non-empty input', () => {
-    expect(validateForm("Aahan")).toBe(true)
+describe('Form Testing', () => {
+  it('valid input', () => {
+    expect(validateForm("Udhav")).toBe(true)
   })
 
-  it('should fail empty input', () => {
+  it('empty input', () => {
     expect(validateForm("")).toBe(false)
   })
 })
