@@ -96,7 +96,7 @@ DELETE | `/students/<id>` | Delete student |
 ### Create Student
 ```json
 {
-  "name": "Bedant",
+  "name": "Udhav",
   "age": 23
 }
 ```
@@ -104,7 +104,7 @@ DELETE | `/students/<id>` | Delete student |
 ```json
 {
   "id": 1,
-  "name": "Bedant",
+  "name": "Udhav",
   "age": 22
 }
 
