@@ -82,19 +82,9 @@ Experiment-11/
 
 ##  Deployment Details
 
-- **Repository Name:** FSD-II  
-- **GitHub Username:** Bedant186  
+- **Repository Name:** FSD-experiment
+- **GitHub Username:** Udhav0905
 
-- **GitHub Repository:**  
-  https://github.com/Bedant186/FSD-II/tree/main/backend/Experiment-11  
-
-- **Live Deployment (Render):**  
-
-  - Customer Service:  
-    https://two3bda70122-experiment-11a.onrender.com/  
-
-  - Order Service:  
-    https://two3bda70122-expepriment-11b.onrender.com/ 
 
 ---
 
@@ -118,8 +108,8 @@ This experiment successfully demonstrated the implementation of a microservice-b
 
 ## 👨‍💻 Author
 
-**Bedant Singhania**  
-23BDA70122
+**Udhav Mittal**  
+23BDA70079
 BE CSE (Big Data Analytics)  
 Chandigarh University  
 
