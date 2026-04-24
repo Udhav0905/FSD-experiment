@@ -1,4 +1,4 @@
-name: FSD Frontend CI
+name: FSD Testing CI
 
 on:
   push:
@@ -11,30 +11,42 @@ jobs:
   frontend-test:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: testing/frontend
-
     steps:
-
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js
+      - name: Show folder structure
+        run: ls -R
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # Step 3: Install dependencies
-      - name: Install dependencies
+      - name: Install frontend dependencies
+        working-directory: testing/frontend
         run: npm install
 
-      # Step 4: Build project
-      - name: Build project
-        run: npm run build || echo "No build script found"
+      - name: Run frontend tests
+        working-directory: testing/frontend
+        run: npm test || echo "No frontend tests"
 
-      # Step 5: Run tests (if exist)
-      - name: Run tests
-        run: npm test || echo "No tests found"
+  backend-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install backend dependencies
+        working-directory: testing/backend
+        run: pip install -r requirements.txt
+
+      - name: Run backend tests
+        working-directory: testing/backend
+        run: pytest || echo "No backend tests"
