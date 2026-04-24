@@ -3,7 +3,7 @@
 ## Experiment Number
 **Experiment No: 9**
 
----
+--
 
 ## Experiment Title
 **Implement Authentication using Tokens**
@@ -171,11 +171,7 @@ The backend API was deployed using **Render Cloud Platform**.
 
 ## GitHub Repository
 
-**Repository Name:** FSD EXPERIMENTS  
-**GitHub Username:** Udhav0905  
-
----
-
+S
 ## Testing Instructions
 
 ### Step 1: Run the Flask Server
