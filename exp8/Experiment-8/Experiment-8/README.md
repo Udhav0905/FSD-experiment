@@ -153,5 +153,5 @@ This experiment successfully demonstrated how to design and implement RESTful AP
 
 ## Author
 
-Bedant Singhania
+Udhav Mittal
 Experiment 8 – RESTful API Development using Flask
