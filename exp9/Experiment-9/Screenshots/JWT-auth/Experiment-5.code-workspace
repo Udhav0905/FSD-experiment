@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "Experiment-5",
+			"path": "../../../../../FSD-2-main/Experiment-5"
+		},
+		{
+			"name": "experiment-3",
+			"path": "../../../../../experiment-3"
+		},
+		{
+			"name": "experiment-2",
+			"path": "../../../../../experiment-2"
+		},
+		{
+			"name": "experiemnt6",
+			"path": "../../../../../FSD-2-main/experiemnt6"
+		},
+		{
+			"name": "Experiment-8",
+			"path": "../../../../../Experiment-8"
+		},
+		{
+			"name": "FSD EXPERIMENTS",
+			"path": "../../../.."
+		},
+		{
+			"name": "src",
+			"path": "../../../../../experiment-3/src"
+		},
+		{
+			"path": "../../../../../Experiment-9"
+		}
+	],
+	"settings": {}
+}
