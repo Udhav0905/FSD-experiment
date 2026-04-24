@@ -113,11 +113,10 @@ DELETE | `/students/<id>` | Delete student |
 Deployment Details
 
 ## GitHub Repository:
-Repository Name: FSD-II/backend/Experiment-8
-Username: Bedant186
+Repository Name: FSD-experiment/exp8/Experiment-8
+/Experiment-8/
+Username: Udhav0905
 
-## Live Deployment :
-https://two3bda70122-experiment-8.onrender.com
 
 ## Testing Instructions:
 -Open Postman
