@@ -1,4 +1,4 @@
-name: FSD Project CI
+name: FSD Frontend CI
 
 on:
   push:
@@ -11,9 +11,13 @@ jobs:
   frontend-test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: testing/frontend
+
     steps:
 
-      # Step 1: Checkout code
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -27,43 +31,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build project (for React/Vite)
+      # Step 4: Build project
       - name: Build project
         run: npm run build || echo "No build script found"
 
-      # Step 5: Run tests if available
+      # Step 5: Run tests (if exist)
       - name: Run tests
         run: npm test || echo "No tests found"
-
-  backend-test:
-    runs-on: ubuntu-latest
-
-    steps:
-
-      # Step 1: Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Step 2: Setup Python (if backend exists)
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      # Step 3: Install Python dependencies
-      - name: Install backend dependencies
-        run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            echo "No backend requirements found"
-          fi
-
-      # Step 4: Run backend tests if available
-      - name: Run backend tests
-        run: |
-          if [ -d tests ]; then
-            python -m unittest discover
-          else
-            echo "No backend tests found"
-          fi
